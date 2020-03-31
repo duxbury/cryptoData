@@ -1,0 +1,4 @@
+# crons to store crypto data
+
+* * * * * cd /home/gitWorkspace/cryptoData && stdbuf -i0 -o0 -e0 python dataStoreSpot.py >> /home/gitWorkspace/cryptoData/logs/dataStoreSpot.op 2>> /home/gitWorkspace/cryptoData/logs/dataStoreSpot.er &
+* * * * * cd /home/gitWorkspace/cryptoData && stdbuf -i0 -o0 -e0 python dataStoreFutures.py >> /home/gitWorkspace/cryptoData/logs/dataStoreFutures.op 2>> /home/gitWorkspace/cryptoData/logs/dataStoreFutures.er &
